@@ -7,20 +7,21 @@ public struct BaseFilterPackage {
     
     // Define the size of the scanning window
     private let windowSize = 5
-    private var width = 0
-    private var height = 0
+//    private var width = 0
+//    private var height = 0
     
     public init() { }
     
     // Get the width and height of the input image
-    private mutating func getSizeOfElement(inputImage: UIImage) {
-        width = Int(inputImage.size.width)
-        height = Int(inputImage.size.height)
-    }
+//    private mutating func getSizeOfElement(inputImage: UIImage) {
+//        width = Int(inputImage.size.width)
+//        height = Int(inputImage.size.height)
+//    }
     
     
     public mutating func createMagic(inputImage: UIImage) -> UIImageView {
-        getSizeOfElement(inputImage: inputImage)
+        let width = Int(inputImage.size.width)
+        let height = Int(inputImage.size.height)
         // Create a new output image context
         UIGraphicsBeginImageContextWithOptions(inputImage.size, false, inputImage.scale)
         
