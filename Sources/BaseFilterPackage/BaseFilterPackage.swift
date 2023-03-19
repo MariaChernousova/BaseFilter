@@ -3,7 +3,7 @@ import UIKit
 public struct BaseFilterPackage {
     
     // Load the input image
-    public var inputImage: UIImage
+//    public var inputImage: UIImage
     
     // Define the size of the scanning window
     private let windowSize = 5
