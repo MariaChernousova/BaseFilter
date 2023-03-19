@@ -10,6 +10,8 @@ public struct BaseFilterPackage {
     private var width = 0
     private var height = 0
     
+    public init() { }
+    
     // Get the width and height of the input image
     private mutating func getSizeOfElement(inputImage: UIImage) {
         width = Int(inputImage.size.width)
