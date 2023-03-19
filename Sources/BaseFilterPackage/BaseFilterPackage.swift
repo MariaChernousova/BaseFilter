@@ -19,7 +19,7 @@ public struct BaseFilterPackage {
 //    }
     
     
-    public mutating func createMagic(inputImage: UIImage) -> UIImageView {
+    public func createMagic(inputImage: UIImage) -> UIImageView {
         let width = Int(inputImage.size.width)
         let height = Int(inputImage.size.height)
         // Create a new output image context
